@@ -5,7 +5,7 @@ front end and Node, Express, and Mongo on the back end.
 
 ## Starting the Lab
 
-To start the lab, you must follow this [GitHub Classroom link](https://classroom.github.com/a/gyf7ZL-W). This will create a private repository for you using our classroom site. We will only grade repositories created and submitted this way.
+To start the lab, you must follow this [GitHub Classroom link](https://classroom.github.com/a/a3PWXheX). This will create a private repository for you using our classroom site. We will only grade repositories created and submitted this way.
 
 Once you "Accept the assignment" on GitHub Classroom, it will create a new repository for you and grant you access to it on GitHub. In order to start working on the lab, simply clone the repository to your laptop or other working environment.
 
