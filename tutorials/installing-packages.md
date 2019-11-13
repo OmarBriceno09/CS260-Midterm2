@@ -10,13 +10,15 @@ npm install express mongoose multer
 
 We'll be using Express for the REST API. We'll use Mongoose to provide an object interface for the Mongo database. And we'll use multer to help us upload images.
 
-We should now be able to run the application. First, start Mongo. You can either start it manually:
+We should now be able to run the application. First, start Mongo. If you have it running already, dont do anything.
+
+You can start it manually:
 
 ```
 mongod --config /usr/local/etc/mongod.conf
 ```
 
-or perhaps you have it running already as a service on MacOS:
+or you can run it as a service on MacOS:
 
 ```
 brew services list
@@ -31,4 +33,4 @@ Once Mongo is running, then you can run the node server:
 node server.js
 ```
 
-This will start on port 3000, and you can browse to localhost:3000.
+This will start on port 3000, and you can browse to yourserver:3000.
