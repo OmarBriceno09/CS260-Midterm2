@@ -33,7 +33,7 @@ In a footer, you must include a link to your GitHub repository, which must be st
 
 ## Submission
 
-On Canvas, submit the URL for your website, which should be running on your DigitalOcean server.
+On Canvas, submit the URL for your website, which should be running on your node server.
 
 ## Rubric for Grading
 
