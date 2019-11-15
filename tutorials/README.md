@@ -12,6 +12,6 @@ Additional functionality:
 1. [Editing Items](/tutorials/editing-items.md)
 1. [Item Descriptions](/tutorials/item-descriptions.md)
 
-Running on Digital Ocean:
+If you are using Digital Ocean, the following instructions could help
 
 1. [Digital Ocean](/tutorials/digital-ocean.md)
