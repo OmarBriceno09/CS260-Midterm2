@@ -4,23 +4,34 @@
 <head>
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
-  <title>Museum of Ordinary Objects</title>
+  <title>Shopping</title>
 </head>
 
 <body>
-  <div class="header">
-    <div class="logo">
-      <img src="images/ordinary.png">
-    </div>
-    <div class="title">
-      <h2>CS 260</h2>
-      <h1>Museum of Ordinary Objects</h1>
-    </div>
-  </div>
+
   <div id="app" class="content">
+    <h1>Shopping Interface Current Products</h1>
+      <div class="image" v-for="item in items">
+        
+        <input type="checkbox" style="float: left;" v-model="item.purchased"><!--@click="purcheseItem(item)"-->
+        
+        <h2>{{item.title}} - price {{item.price}}</h2>
+        <img :src="item.path" width="10"/>
+      </div>
+      <!--button @click="SubmitPurchase()">SubmitPurchase</button--->
+      <button @click="SubmitPurchase()">SubmitPurchase</button>
+          <div class="purchasedItems" v-if="purchasedItems.length > 0">
+                  <div class="image" v-for="p in purchasedItems">
+        
+                    <h2>{{p.title}} - price {{p.price}}</h2>
+                    <img :src="p.path" width="10"/>
+                  </div>
+          </div>
+      </div>
   </div>
+  
   <div class="footer">
-    <a href="admin.html">Admin</a>
+    <!--a href="admin.html">Admin</a-->
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js" integrity="sha256-mpnrJ5DpEZZkwkE1ZgkEQQJW/46CSEh/STrZKOB/qoM=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.7/vue.js" integrity="sha256-g+Q8DFAmG5+eyRPSydX0LY4TfjsL11XSDrIGerbbEdA=" crossorigin="anonymous"></script>
